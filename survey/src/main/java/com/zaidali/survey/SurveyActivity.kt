@@ -23,8 +23,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-
-class SurveyActivity  : BaseBindingActivity<ActivitySurveyBinding>(R.layout.activity_survey) {
+class SurveyActivity : BaseBindingActivity<ActivitySurveyBinding>(R.layout.activity_survey) {
 
     private var photoUri: Uri? = null
     private val requestPermissionLauncher =
@@ -39,6 +38,14 @@ class SurveyActivity  : BaseBindingActivity<ActivitySurveyBinding>(R.layout.acti
             photoUri = bitmap?.let { bitmapToUri(this@SurveyActivity , it) }
         }
 
+    /*private val takePictureLauncher =
+        registerForActivityResult(ActivityResultContracts.TakePicture()) { success ->
+            if (success) {
+                val photoFile = File(externalCacheDir, "temp_photo.jpg")
+                photoUri = Uri.fromFile(photoFile)
+                binding.imageView.setImageURI(photoUri)
+            }
+        }*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

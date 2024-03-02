@@ -9,7 +9,6 @@ import androidx.core.view.isVisible
 import com.google.gson.Gson
 import com.zaidali.survey.Survey
 import com.zaidali.survey.SurveyActivity
-
 import com.zaidali.surveysdk.databinding.ActivityMainBinding
 
 class MainActivity : BaseBindingActivity<ActivityMainBinding>(R.layout.activity_main) {

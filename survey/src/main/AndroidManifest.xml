@@ -19,7 +19,7 @@
         </provider>
         <activity
             android:name=".SurveyActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_survey"
             android:theme="@style/Theme.SurveySDK" />
     </application>
